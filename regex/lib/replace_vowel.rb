@@ -1,6 +1,6 @@
 class ReplaceVowel
-  def replace(string)
-    string.gsub!(/[aieou]/, "*")
-    puts string
+  def replace_vowel(string)
+    replace_char = /[aieou]/i
+    string.gsub!(replace_char, "*")
   end
 end
